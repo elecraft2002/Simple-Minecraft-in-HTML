@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rendering</title>
+</head>
+
+<body>
+    <div id="window" onmousemove="getPos(event)">
+        <div class="tutorial">
+            <h1>Minecraft by Vojtík Suchánek</h1>
+            <p>Pohyb pomocí Myši, WSAD, Šipkama, Mezerníkem a Shiftem</p>
+            <p>Když nefunguje pohyb, pomáhá zmáčknout F12</p>
+            <h2>Verze 1.1</h2>
+            <p>Funguje: Přidávání kostek, stíny, odstraňování vnitřku (optimalizace), pohyb</p>
+        </div>
+        <div id="camera">
+            <div id="movement">
+                <div id="world">
+                    <div class="cube container type1">
+                        <div onclick="create(0,0,1)" class="cube f"></div>
+                        <div onclick="create(0,0,-1)" class="cube ba"></div>
+                        <div onclick="create(1,0,0)" class="cube r"></div>
+                        <div onclick="create(-1,0,0)" class="cube l"></div>
+                        <div onclick="create(0,-1,0)" class="cube t"></div>
+                        <div onclick="create(0,1,0)" class="cube bt"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
